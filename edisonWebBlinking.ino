@@ -1,13 +1,15 @@
 /*
 Edison wifi web blinking sample
+
+-- First play for Intel Edison workshop's
+
 */
 # include <SPI.h>
 # include <WiFi.h>
 
-char serviceSID[]	= "sSID";           //  your network serviceSID (name) 
+char serviceSID[]	= "sSID";           // your network serviceSID (name) 
 char password[]		= "password";		// your network passwordword
 int  wifiStatus		= WL_IDLE_STATUS;
-int  keyIndex = 0;                      // your network key Index number (needed only for WEP)
 
 WiFiServer edisonWebServer(8010);       // Our server on port 8010
 
